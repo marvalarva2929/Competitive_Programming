@@ -23,7 +23,9 @@ int main() {
             if (nums[i + 1] != nums[i]) {
                 ans = max(ans, 1ll*(n - 1 - i)*(i + 1)); 
             }
-        }   
+        }
+
+
         cout << ans << nl;
     }   
 }

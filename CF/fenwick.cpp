@@ -1,13 +1,16 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #define nl '\n'
-#define MAX (int)1e4
 using namespace std;
-int array[MAX];
+
+const int mxn = 1e4;
+
+int a[mxn];
 
 class Fenwick {
     public:
     int N;
     int *Tree;
+	
     Fenwick(int a[], int N) {
         this->N = N;
         this->Tree = new int[(this->N) + 1];
@@ -19,6 +22,8 @@ class Fenwick {
             
 
     }
+    
+    
 
     void addValue(int i, int v) {
         int ix = i;
@@ -44,13 +49,14 @@ int main() {
     int n;
     cin >> n;
     for (int i = 0; i < n; i++) {
-        cin >> array[i];
+        cin >> a[i];
     }
-    Fenwick fenwick(array, n + 1);
 
+    Fenwick fenwick(a, n + 1);
+    
     while (true) {
         int x;
         cin >> x;
-        cout << "The sum of the xth prefix is " << fenwick.sumTo(x) << nl;
+        cout << "The sum of the xth prefix is " << (fenwick.sumTo(x)) << nl;
     }
  }
