@@ -38,12 +38,12 @@ int main() {
     for (int i = 0; i < n; i++) {
         int weight; 
         fin >> weight;
-        Letter newLetter;
+        Letter* newLetter;
         newLetter = new Letter;
         newLetter->left = NULL;
         newLetter->right = NULL;
         newLetter->weight = weight;
-        nextLetter.push(newLetter);
+        nextLetter.push(*newLetter);
     }
     while (nextLetter.size() > 1) {
         Letter connectOne = nextLetter.top();
