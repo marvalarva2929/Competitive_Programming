@@ -31,18 +31,13 @@ signed main() {
             if (!((a[i] >> k) & 1)) 
                     cnt[k][b[i]]++;
     }
-
-    //for (int i = 0; i < 26; i++) {
-    //   cout << i << " : " << nl;
-    //   for (auto &p : cnt[i])
-    //       cout << bitset<26>(p.ff).to_string() << " " << p.ss << nl;
-    //} 
-        
+       
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < 26; j++)
             if (!((a[i] >> j) & 1)) 
                 ans += cnt[j][((b[i] ^ ((1 << 26) - 1)) - (1 << j))];
     }
+ 
     cout << ans/2 << nl;
 }
 
