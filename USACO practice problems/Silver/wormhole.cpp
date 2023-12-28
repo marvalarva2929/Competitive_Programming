@@ -1,5 +1,5 @@
-using namespace std;
 #include <bits/stdc++.h>
+using namespace std;
 #define int long long
 #define nl '\n'
 
