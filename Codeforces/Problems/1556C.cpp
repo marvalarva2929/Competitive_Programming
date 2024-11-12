@@ -19,8 +19,8 @@ signed main() {
         int left = a[i];
         for (int j = i + 1; j < n; j++)
             if (j % 2) {
-                int right = a[j];
-                    
+                int right = a[j];	
+
                 int l = -mn, r = sum - mn;
 
                 if (a[i] < -mn) break;

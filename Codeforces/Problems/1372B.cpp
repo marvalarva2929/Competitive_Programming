@@ -1,6 +1,8 @@
+#include <bits/stdc++.h>
 #include <iostream>
 #include <cmath>
 #define nl '\n'
+
 using namespace std;
 
 int main() {

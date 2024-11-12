@@ -1,7 +1,7 @@
-using namespace std;
 #include <bits/stdc++.h>
 #define int long long
 #define nl '\n'
+using namespace std;
 
 int n, m;
 string s;
