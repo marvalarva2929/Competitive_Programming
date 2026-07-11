@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int mxn = 1e6;
+int a[mxn];
+
+int main() {
+	string s;
+	int k;
+
+	cin >> s >> k;
+
+
+}

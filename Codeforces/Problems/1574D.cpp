@@ -1,10 +1,12 @@
-#include <bits/stdc++.h>
+using namespace std;
+
+#include "iostream"
+#include "bits/stdc++.h"
 #define int long long
 #define nl " \n"
 #define ff first
 #define ss second
 
-using namespace std;
 const int mxn = 10, mxc = 2e5, mxm = 1e5;
 
 template <class T> using v = vector<T>;
